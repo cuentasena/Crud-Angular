@@ -1,0 +1,26 @@
+<h2>Crear Producto</h2>
+
+<div class="campo">
+  <label>Nombre:</label>
+  <input
+    type="text"
+    [(ngModel)]="nombre"
+    placeholder="Ej: Laptop Gamer"
+  />
+</div>
+
+<div class="campo">
+  <label>Precio:</label>
+  <input
+    type="number"
+    [(ngModel)]="precio"
+    placeholder="Ej: 1500"
+  />
+</div>
+
+<button
+  [disabled]="!esValido()"
+  (click)="crearProducto()"
+  class="btn-crear">
+  + Crear Producto
+</button>
