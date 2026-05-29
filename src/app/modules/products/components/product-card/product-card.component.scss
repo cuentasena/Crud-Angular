@@ -1,0 +1,53 @@
+.tarjeta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fafafa;
+    transition: all 0.2s;
+  
+    &:hover {
+      background: #f0f0f0;
+      transform: translateX(5px);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  
+    .info {
+      flex: 1;
+  
+      h3 {
+        margin: 0 0 5px 0;
+        font-size: 18px;
+        color: #333;
+      }
+  
+      .precio {
+        margin: 5px 0;
+        color: #28a745;
+        font-weight: bold;
+        font-size: 16px;
+      }
+  
+      .id {
+        margin: 0;
+        color: #999;
+        font-size: 12px;
+      }
+    }
+  
+    .btn-eliminar {
+      background: #dc3545;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+  
+      &:hover {
+        background: #c82333;
+      }
+    }
+  }

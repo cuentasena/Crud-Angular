@@ -1,0 +1,10 @@
+<div class="tarjeta">
+    <div class="info">
+      <h3>{{ producto.nombre }}</h3>
+      <p class="precio">${{ producto.precio }}</p>
+      <p class="id">ID: {{ producto.id }}</p>
+    </div>
+    <button class="btn-eliminar" (click)="eliminar()">
+      🗑️ Eliminar
+    </button>
+  </div>
