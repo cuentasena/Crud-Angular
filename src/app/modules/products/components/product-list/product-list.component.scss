@@ -1,0 +1,51 @@
+.buscador {
+    position: relative;
+    margin-bottom: 20px;
+  
+    .input-buscar {
+      width: 100%;
+      padding: 10px 35px 10px 15px;
+      border: 1px solid #ddd;
+      border-radius: 25px;
+      font-size: 14px;
+      box-sizing: border-box;
+  
+      &:focus {
+        outline: none;
+        border-color: #007bff;
+      }
+    }
+  
+    .btn-limpiar {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      color: #999;
+  
+      &:hover {
+        color: #333;
+      }
+    }
+  }
+  
+  .vacio {
+    text-align: center;
+    padding: 60px 20px;
+    color: #666;
+  
+    .icono {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+  }
+  
+  .lista-tarjetas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }

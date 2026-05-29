@@ -1,0 +1,25 @@
+<div class="buscador">
+    <input
+      type="text"
+      [(ngModel)]="terminoBusqueda"
+      (input)="buscar()"
+      placeholder="🔍 Buscar producto por nombre..."
+      class="input-buscar"
+    />
+    <button *ngIf="terminoBusqueda" (click)="limpiarBusqueda()" class="btn-limpiar">
+      ✖
+    </button>
+  </div>
+  
+  <div *ngIf="productos.length === 0" class="vacio">
+    <div class="icono">⚠️</div>
+    <p *ngIf="terminoBusqueda === ''">No hay productos para mostrar</p>
+    <p *ngIf="terminoBusqueda !== ''">No se encontraron productos con "{{ terminoBusqueda }}"</p>
+  </div>
+  
+  <div *ngFor="let producto of productos" class="lista-tarjetas">
+    <app-product-card
+      [producto]="producto"
+      (productoEliminado)="actualizarLista()">
+    </app-product-card>
+  </div>
