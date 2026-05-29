@@ -1,0 +1,25 @@
+.contenedor {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    min-height: 100vh;
+    background: #f0f2f5;
+  
+    .columna-izquierda {
+      flex: 1;
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      overflow-y: auto;
+      max-height: 90vh;
+    }
+  
+    .columna-derecha {
+      flex: 1;
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  }
